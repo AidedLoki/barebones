@@ -1,4 +1,4 @@
-package domain
+package main
 
 type customer struct {
 	ID   string `json: "id"`

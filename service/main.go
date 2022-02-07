@@ -4,8 +4,6 @@ import (
 	"fmt"
 	"net/http"
 
-	"service/domain/customer"
-
 	"github.com/gin-gonic/gin"
 )
 
@@ -16,7 +14,7 @@ var customers = []customer{
 
 func main() {
 	fmt.Println("Hello, Service !")
-	c := customer.NewCustomer("1", "Yoohoo")
+	c := NewCustomer("1", "Yoohoo")
 	fmt.Print(c.Name)
 
 	router := gin.Default()
